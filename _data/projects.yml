@@ -1,0 +1,7 @@
+- title: Pseudocode → AI Workflows
+  url: https://github.com/dboles99/pseudocode-ai-workflows
+  blurb: Pseudocode-first LLM workflows (prompt → plan → tools → evals) with CI, CodeQL, and a .NET demo.
+  image: /assets/img/pseudo-pipeline.gif   # replace when you have the real GIF
+  tags: [Python, LLM, Evaluations, GitHub Actions, CodeQL, .NET]
+
+# Add more projects below as you publish them

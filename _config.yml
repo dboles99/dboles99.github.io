@@ -1,12 +1,22 @@
-﻿title: Daniel "Dan" Boles — AI & Systems
+title: Daniel ""Dan"" Boles — AI & Systems
 description: Research→Code workflows with contracts, tests, CI, and reproducible artifacts.
-theme: minima
-markdown: kramdown
-show_excerpts: true
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
-  - jekyll-feed
+  - jekyll-remote-theme
   - jekyll-seo-tag
-minima:
-  skin: auto
-  social_links:
-    - { platform: github, user_url: "https://github.com/dboles99" }
+  - jekyll-sitemap
+
+# nav items (appear in the header)
+navigation:
+  - title: Projects
+    url: /
+  - title: GitHub
+    url: https://github.com/dboles99
+  - title: Resume
+    url: /assets/DanBoles_Resume.pdf
+
+# social (used by the head include below)
+social:
+  github: dboles99
+  linkedin: YOUR-LINKEDIN-SLUG
+  email: your@email.tld
