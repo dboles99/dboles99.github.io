@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Dan Boles â€” AI & Systems
+title: Dan Boles — AI & Systems
 image: /assets/img/og-cover.png
 ---
 
 <div class="hero">
-  <h1>Dan Boles â€” AI &amp; Systems</h1>
-  <p class="tagline">LLM apps, evaluators, CI pipelines, and reproducible researchâ†’code workflows.</p>
+  <h1>Dan Boles — AI &amp; Systems</h1>
+  <p class="tagline">LLM apps, evaluators, CI pipelines, and reproducible research→code workflows.</p>
   <p class="cta-row">
     <a class="btn" href="#projects">View Projects</a>
     <a class="btn btn-secondary" href="https://github.com/dboles99">GitHub</a>
