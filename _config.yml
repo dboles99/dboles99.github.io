@@ -1,0 +1,12 @@
+﻿title: Daniel "Dan" Boles — AI & Systems
+description: Research→Code workflows with contracts, tests, CI, and reproducible artifacts.
+theme: minima
+markdown: kramdown
+show_excerpts: true
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+minima:
+  skin: auto
+  social_links:
+    - { platform: github, user_url: "https://github.com/dboles99" }
