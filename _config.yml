@@ -1,5 +1,5 @@
-title: Daniel ""Dan"" Boles — AI & Systems
-description: Research→Code workflows with contracts, tests, CI, and reproducible artifacts.
+title: 'Daniel "Dan" Boles — AI & Systems'
+description: Researchâ†’Code workflows with contracts, tests, CI, and reproducible artifacts.
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
