@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel Boles | Applied AI Developer</title>
+<meta name="description" content="Daniel Boles builds LLM systems, agent governance, evaluation, and language technology. Public code, measured results, and research manuscripts.">
+<style>
+:root{--bg:#fff;--soft:#f4f7f8;--line:#d9e2e5;--ink:#22282e;--mute:#55606a;--navy:#12324f;--teal:#0b7f7a;--max:60rem}
+@media (prefers-color-scheme:dark){:root{--bg:#10171d;--soft:#18222a;--line:#2b3a44;--ink:#e6ecef;--mute:#a3b1ba;--navy:#b9d4e8;--teal:#4cc4bc}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 -apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+header{padding:4.5rem 0 2.5rem;border-bottom:3px solid var(--teal)}
+h1{margin:0;font-size:clamp(2.4rem,7vw,3.6rem);line-height:1.1;color:var(--navy);letter-spacing:-.02em}
+.role{margin:.6rem 0 0;font-size:1.15rem;font-weight:600;color:var(--teal)}
+.line{margin:1.6rem 0 0;max-width:44rem;font-size:1.25rem;line-height:1.5;color:var(--navy);font-style:italic}
+.zh{margin:1rem 0 0;font-size:.95rem;color:var(--mute)}
+.zh p{margin:.15rem 0}
+section{padding:2.75rem 0 .5rem}
+h2{margin:0 0 1rem;font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;color:var(--navy)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem}
+.stat{background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:1rem}
+.stat b{display:block;font-size:1.9rem;line-height:1.15;color:var(--teal)}
+.stat span{display:block;margin-top:.3rem;font-size:.86rem;line-height:1.35;color:var(--mute)}
+.lede{max-width:46rem;margin:0 0 1rem}
+.note{font-size:.88rem;color:var(--mute);margin:.8rem 0 0}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+.card{border:1px solid var(--line);border-radius:8px;padding:1.05rem 1.1rem;display:flex;flex-direction:column}
+.card h3{margin:0;font-size:1.08rem;color:var(--navy)}
+.card p{margin:.45rem 0 0;font-size:.96rem;line-height:1.5}
+.card .res{color:var(--mute);font-size:.88rem;margin-top:.5rem}
+.card .links{margin-top:auto;padding-top:.65rem;font-size:.9rem}
+a{color:var(--teal);text-underline-offset:2px}
+a:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.links a{margin-right:.9rem;display:inline-block}
+ol.steps{margin:0;padding-left:1.25rem;max-width:46rem}
+ol.steps li{margin:.3rem 0}
+footer{margin-top:3rem;padding:1.5rem 0 3rem;border-top:1px solid var(--line);font-size:.88rem;color:var(--mute)}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr}header{padding-top:3rem}body{font-size:16px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<h1>Daniel Boles</h1>
+<p class="role">Applied AI Developer &nbsp;|&nbsp; Technical Project Manager &nbsp;|&nbsp; Language Technology</p>
+<p class="line">Most AI systems fail quietly, so the work here begins by deciding what would prove them wrong.</p>
+<div class="zh">
+<p>简体中文：应用型 AI 开发者，专注于大模型系统、智能体、评测与语言技术。</p>
+<p>繁體中文：應用型 AI 開發者，專注於大型語言模型系統、代理、評測與語言技術。</p>
+</div>
+</div>
+</header>
+<main class="wrap">
+<section aria-labelledby="proof">
+<h2 id="proof">Measured results</h2>
+<div class="stats">
+<div class="stat"><b>59</b><span>Python packages in a private production AI editing and translation suite, sole developer</span></div>
+<div class="stat"><b>10,000+</b><span>automated tests written for that suite</span></div>
+<div class="stat"><b>40 of 41</b><span>translations passed automated QA with a local Qwen model, against 33 of 41 for retrieval alone</span></div>
+<div class="stat"><b>9 of 14</b><span>citation identifiers found wrong when an earlier review was audited</span></div>
+</div>
+<p class="note">The production suite stays private because it is company work. The public repositories below show the same method, with the code open to inspection.</p>
+</section>
+
+<section aria-labelledby="agents">
+<h2 id="agents">Agents and LLM systems</h2>
+<div class="cards">
+<article class="card"><h3>agent-gateway</h3><p>Admission control, budgets, checkpoints, and watchdogs for coding agents that run unattended, because an agent that has stopped working does not report the fact.</p><p class="res">241 tests passed, 1 skipped</p><p class="links"><a href="https://github.com/dboles99/agent-gateway">Code</a><a href="https://github.com/dboles99/agent-gateway/wiki">Wiki</a></p></article>
+<article class="card"><h3>tm-rag-copilot</h3><p>Retrieval over a synthetic translation memory with deterministic QA. The experiments record what failed as well as what worked, including a hybrid search that lost at three of four depths.</p><p class="res">Right match in the top 10 for 82.9% of queries with a language filter</p><p class="links"><a href="https://dboles99.github.io/tm-rag-copilot/">Results</a><a href="https://github.com/dboles99/tm-rag-copilot">Code</a><a href="https://github.com/dboles99/tm-rag-copilot/wiki">Wiki</a></p></article>
+<article class="card"><h3>docx-mcp</h3><p>A read-only MCP server that lets an agent read a Word document as it would stand with every tracked change accepted.</p><p class="res">67 tests passed; six tools, none of which can write</p><p class="links"><a href="https://github.com/dboles99/docx-mcp">Code</a><a href="https://github.com/dboles99/docx-mcp/wiki">Wiki</a></p></article>
+<article class="card"><h3>rosetta-bench and rosetta</h3><p>A harness for comparing prompt formats across model providers, and the tooling that keeps one prompt in a human form and a machine form.</p><p class="res">38 and 50 tests passed; no model benchmark results published yet</p><p class="links"><a href="https://github.com/dboles99/rosetta-bench">Harness</a><a href="https://github.com/dboles99/rosetta">Tooling</a></p></article>
+</div>
+</section>
+
+<section aria-labelledby="research">
+<h2 id="research">Research</h2>
+<p class="lede">The papers below are manuscripts, written to inform the repositories that accompany them. None has been submitted to a journal or peer-reviewed.</p>
+<div class="cards">
+<article class="card"><h3>Pseudocode as a guardrail</h3><p>A single-case study in which a language model drafts a pseudocode specification, a compiler enforces its contracts, and execution finds what review missed.</p><p class="res">Eight defects found by execution and logged</p><p class="links"><a href="https://github.com/dboles99/pseudocode-ai-workflows">Code</a><a href="https://github.com/dboles99/papers">Papers</a></p></article>
+<article class="card"><h3>Detecting LLM text watermarks</h3><p>A research lab and evidence synthesis on what statistical watermarks can and cannot show. It measures and detects, and it ships no tooling for removing watermarks.</p><p class="res">Empirical validation of the application is pending</p><p class="links"><a href="https://github.com/dboles99/llm-watermark-lab">Lab</a><a href="https://github.com/dboles99/papers/wiki">Reading guide</a></p></article>
+</div>
+</section>
+
+<section aria-labelledby="software">
+<h2 id="software">Software</h2>
+<div class="cards">
+<article class="card"><h3>BachelorPad+ Lite</h3><p>A Rust text editor with Notepad's features and a local note layer that never touches the network.</p><p class="res">1,104 test functions in the source; 94 recorded decisions</p><p class="links"><a href="https://github.com/dboles99/bachelorpluslite">Code</a><a href="https://github.com/dboles99/bachelorpluslite/wiki">Wiki</a></p></article>
+<article class="card"><h3>BachelorPad+</h3><p>The larger Rust text-processing application for Windows and Linux.</p><p class="res">2,026 test functions in the source; 68 recorded decisions</p><p class="links"><a href="https://github.com/dboles99/bachelorpadplus_rust">Code</a><a href="https://github.com/dboles99/bachelorpadplus_rust/wiki">Wiki</a></p></article>
+<article class="card"><h3>SlideBridge</h3><p>Converts PowerPoint decks into review-ready Word documents with slide images and tables.</p><p class="res">45 tests passed</p><p class="links"><a href="https://github.com/dboles99/SlideBridge">Code</a><a href="https://github.com/dboles99/SlideBridge/wiki">Wiki</a></p></article>
+<article class="card"><h3>Amplified Futures</h3><p>C++ DSP modules for VCV Rack 2, built for drone, feedback, and detuned oscillator systems.</p><p class="links"><a href="https://github.com/dboles99/amplified-futures-vcv">Code</a><a href="https://github.com/dboles99/amplified-futures-vcv/wiki">Wiki</a></p></article>
+</div>
+</section>
+
+<section aria-labelledby="method">
+<h2 id="method">Method</h2>
+<p class="lede">The work proceeds through small experiments rather than large claims, because a change small enough to measure is also small enough to undo. Each one faces tests or an evaluation; what works stays, and what fails goes into the record with its numbers, since a negative result on paper saves more time than a success nobody measured.</p>
+<p class="lede">However, a tested system still needs an argument behind it, so each project begins with a question and a written design. Coding agents then implement that design under test suites and review gates, which keeps the judgment with the author and the labor with the machine.</p>
+</section>
+</main>
+<footer>
+<div class="wrap">
+<a href="https://github.com/dboles99">github.com/dboles99</a>
+<p>Designed and authored by Daniel Boles; implemented with coding agents.</p>
+</div>
+</footer>
+</body>
+</html>
